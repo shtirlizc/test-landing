@@ -1,0 +1,36 @@
+.btn {
+  --color-btn: #1f1f1f;
+
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space20) var(--space40);
+  max-width: 263px;
+  border-radius: 66px;
+  background-color: var(--color-btn);
+  color: var(--color-bg);
+  border: 2px solid var(--color-bg);
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-btn);
+  }
+
+  & .slider-btn--outline {
+    background-color: var(--color-hover);
+    color: var(--color-btn);
+    border-color: var(--color-hover);
+
+    &:hover {
+      background-color: var(--color-btn);
+      color: var(--color-bg);
+      border-color: var(--color-btn);
+    }
+  }
+}

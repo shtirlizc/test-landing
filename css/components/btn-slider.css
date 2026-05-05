@@ -1,0 +1,22 @@
+.btn-slider {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: var(--color-text);
+  cursor: pointer;
+  transition: background-color var(--transition);
+
+  &:hover {
+    background-color: var(--color-bg);
+  }
+
+  &.disabled {
+    background-color: var(--color-disabled);
+  }
+}

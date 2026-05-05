@@ -7,6 +7,7 @@
   --color-link: #3057a2;
   --color-accent: #f54932;
   --color-hover: #fbce51;
+  --color-disabled: #d6d6d6;
 
   --space: 4px;
   --space8: calc(var(--space) * 2);
@@ -20,4 +21,6 @@
   --space40: calc(var(--space) * 10);
 
   --transition: 0.2s;
+
+  --container: 1222px;
 }
