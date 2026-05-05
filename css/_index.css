@@ -1,5 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import "./fonts.css";
+@import "./variables.css";
+@import "./body.css";

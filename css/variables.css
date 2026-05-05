@@ -1,0 +1,23 @@
+:root {
+  --font-primary: "Golos Text";
+  --font-head: "Merriweather";
+
+  --color-bg: #ffffff;
+  --color-text: #313131;
+  --color-link: #3057a2;
+  --color-accent: #f54932;
+  --color-hover: #fbce51;
+
+  --space: 4px;
+  --space8: calc(var(--space) * 2);
+  --space12: calc(var(--space) * 3);
+  --space16: calc(var(--space) * 4);
+  --space20: calc(var(--space) * 5);
+  --space24: calc(var(--space) * 6);
+  --space28: calc(var(--space) * 7);
+  --space32: calc(var(--space) * 8);
+  --space36: calc(var(--space) * 9);
+  --space40: calc(var(--space) * 10);
+
+  --transition: 0.2s;
+}
