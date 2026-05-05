@@ -1,0 +1,13 @@
+{
+  "name": "test-landing",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/shtirlizc/test-landing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtirlizc/test-landing.git"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  }
+}
