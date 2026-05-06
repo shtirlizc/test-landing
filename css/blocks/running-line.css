@@ -1,0 +1,13 @@
+.running-line {
+  position: relative;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 1.1rem;
+  line-height: 1.1em;
+  padding: 18px;
+  font-family: var(--font-head), sans-serif;
+  opacity: 1;
+  text-transform: uppercase;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
