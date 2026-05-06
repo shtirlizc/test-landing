@@ -23,4 +23,5 @@
   --transition: 0.2s;
 
   --container: 1222px;
+  --padding: var(--space20);
 }

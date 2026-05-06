@@ -1,0 +1,131 @@
+.hero {
+  --opacity: 0.25;
+
+  position: relative;
+  background-color: #e9ded4;
+
+  & .hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/hero/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: var(--opacity);
+    pointer-events: none;
+  }
+
+  & .hero__wrapper {
+    position: relative;
+  }
+
+  & .hero__content {
+  }
+
+  & .hero__info {
+    padding-inline: var(--padding);
+    z-index: 1;
+    position: relative;
+  }
+
+  & .hero__title {
+    display: grid;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.1em;
+    text-transform: uppercase;
+
+    span {
+      &:nth-child(1) {
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+  }
+
+  & .hero__description {
+    font-size: 0.9rem;
+    line-height: 1.3em;
+  }
+
+  & .hero__actions {
+    max-width: 360px;
+    margin-inline: auto;
+    display: grid;
+    gap: 14px;
+  }
+
+  & .hero__images {
+    position: relative;
+    margin-top: 60px;
+    z-index: 0;
+
+    .city {
+      width: 100%;
+      z-index: 2;
+      position: relative;
+    }
+
+    .chess-1 {
+      position: absolute;
+      width: 47px;
+      height: auto;
+      top: -15px;
+      right: 20vw;
+      z-index: 1;
+    }
+
+    .chess-2 {
+      position: absolute;
+      width: 47px;
+      height: auto;
+      top: 35px;
+      left: 20vw;
+      z-index: 1;
+    }
+
+    .chess-3 {
+      position: absolute;
+      width: 77px;
+      height: auto;
+      bottom: 0;
+      left: 50vw;
+      z-index: 3;
+    }
+
+    .chess-4 {
+      display: none;
+      z-index: 3;
+    }
+
+    .sun {
+      width: 297px;
+      height: auto;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: sun 20s infinite linear;
+    }
+  }
+}
+
+@keyframes sun {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}

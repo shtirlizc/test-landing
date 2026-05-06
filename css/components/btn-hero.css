@@ -1,31 +1,46 @@
-.btn {
+.btn-hero {
   --color-btn: #1f1f1f;
 
-  font-weight: 600;
+  font-weight: 500;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--space20) var(--space40);
-  max-width: 263px;
+  padding: 8px 20px;
   border-radius: 66px;
+  font-size: 0.8rem;
   background-color: var(--color-btn);
   color: var(--color-bg);
-  border: 2px solid var(--color-bg);
+  border: 2px solid var(--color-btn);
+  white-space: nowrap;
   transition:
     background-color var(--transition),
     color var(--transition),
     border-color var(--transition);
 
-  &:hover {
-    background-color: transparent;
-    color: var(--color-btn);
+  /* tablet */
+  @media (width >= 768px) {
+    max-width: 263px;
+    padding: var(--space20) var(--space40);
   }
 
-  & .slider-btn--outline {
+  &:hover {
     background-color: var(--color-hover);
     color: var(--color-btn);
     border-color: var(--color-hover);
+  }
+
+  &.btn-hero--outline {
+    --outline-color: rgba(255, 255, 255, 0.9);
+
+    background-color: transparent;
+    border-color: var(--outline-color);
+    color: var(--color-btn);
+
+    /* tablet */
+    @media (width >= 768px) {
+      background-color: var(--outline-color);
+    }
 
     &:hover {
       background-color: var(--color-btn);
