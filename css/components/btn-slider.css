@@ -1,6 +1,8 @@
 .btn-slider {
-  width: 44px;
-  height: 44px;
+  --size: 36px;
+
+  width: var(--size);
+  height: var(--size);
   border-radius: 50%;
   color: var(--color-bg);
   display: inline-flex;
@@ -12,8 +14,13 @@
   cursor: pointer;
   transition: background-color var(--transition);
 
+  /* tablet */
+  @media (width >= 768px) {
+    --size: 44px;
+  }
+
   &:hover {
-    background-color: var(--color-bg);
+    background-color: var(--color-hover);
   }
 
   &.disabled {
