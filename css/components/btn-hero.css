@@ -24,10 +24,12 @@
     padding: var(--space20) var(--space40);
   }
 
-  &:hover {
-    background-color: var(--color-hover);
-    color: var(--color-btn);
-    border-color: var(--color-hover);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-hover);
+      color: var(--color-btn);
+      border-color: var(--color-hover);
+    }
   }
 
   &.btn-hero--outline {
@@ -42,10 +44,12 @@
       background-color: transparent;
     }
 
-    &:hover {
-      background-color: var(--color-btn);
-      color: var(--color-bg);
-      border-color: var(--color-btn);
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-btn);
+        color: var(--color-bg);
+        border-color: var(--color-btn);
+      }
     }
   }
 }

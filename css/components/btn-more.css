@@ -13,8 +13,10 @@
     background-color var(--transition),
     color var(--transition);
 
-  &:hover {
-    background-color: var(--color-link);
-    color: var(--color-bg);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-link);
+      color: var(--color-bg);
+    }
   }
 }
