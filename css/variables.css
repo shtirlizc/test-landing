@@ -4,6 +4,7 @@
 
   --color-bg: #ffffff;
   --color-text: #313131;
+  --color-border: #d0d0d0;
   --color-link: #3057a2;
   --color-accent: #f54932;
   --color-hover: #fbce51;
@@ -19,6 +20,8 @@
   --space32: calc(var(--space) * 8);
   --space36: calc(var(--space) * 9);
   --space40: calc(var(--space) * 10);
+  --space44: calc(var(--space) * 11);
+  --space48: calc(var(--space) * 12);
 
   --transition: 0.2s;
 

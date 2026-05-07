@@ -1,2 +1,57 @@
 .intro-info {
+  & .intro-info__picture {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .intro-info__head {
+    padding: 0 var(--padding);
+    margin-top: var(--space24);
+  }
+
+  & .intro-info__table {
+    padding: 0 var(--padding);
+    margin-top: var(--space44);
+
+    dl {
+      margin: 0;
+
+      div {
+        padding: var(--space16) 0;
+        border-bottom: 2px solid var(--color-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space12);
+
+        dt {
+        }
+
+        dd {
+          margin: 0;
+          font-weight: 600;
+
+          span {
+            text-decoration: line-through;
+            text-decoration-color: var(--color-accent);
+            text-decoration-thickness: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  & .intro-info__link {
+    margin-top: var(--space40);
+
+    a {
+      color: var(--color-link);
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
 }

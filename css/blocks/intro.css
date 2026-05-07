@@ -1,3 +1,15 @@
 .intro {
   margin-top: 48px;
+
+  & .intro__title {
+    font-family: var(--font-head), sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.35em;
+    text-transform: uppercase;
+
+    b {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+  }
 }
