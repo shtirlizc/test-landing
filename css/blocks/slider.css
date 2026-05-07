@@ -12,6 +12,7 @@
     gap: var(--space20);
     grid-template-columns: repeat(5, calc(100vw - (2 * 20px)));
     width: calc((5 * 100vw) - ((5 + 1) * 20px));
+    padding-bottom: var(--space);
   }
 
   & .slide__common {
@@ -20,6 +21,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 62px var(--space20) 34px;
+    display: grid;
+    gap: var(--space28);
 
     &::after {
       content: "";
@@ -33,6 +37,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    .slider__slide {
+      padding: 0;
     }
   }
 

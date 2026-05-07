@@ -11,8 +11,13 @@
   padding: 0;
   border: none;
   background-color: var(--color-text);
-  cursor: pointer;
   transition: background-color var(--transition);
+
+  &:not(:disabled) {
+    @media (hover: hover) {
+      cursor: pointer;
+    }
+  }
 
   /* tablet */
   @media (width >= 768px) {
@@ -23,7 +28,7 @@
     background-color: var(--color-hover);
   }
 
-  &.disabled {
+  &:disabled {
     background-color: var(--color-disabled);
   }
 }

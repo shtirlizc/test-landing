@@ -17,6 +17,21 @@
   }
 
   & .stages__body {
+    position: relative;
     margin-top: var(--space20);
+    padding-top: 140px;
+  }
+
+  & .stages__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
