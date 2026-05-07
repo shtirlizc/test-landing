@@ -1,2 +1,13 @@
 .footer {
+  margin-top: 100px;
+  background-color: #e9ded4;
+
+  & .footer__content {
+    padding: 40px var(--padding) 60px;
+
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  }
 }
