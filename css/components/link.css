@@ -1,0 +1,10 @@
+.link {
+  margin-top: var(--space12);
+  display: inline-block;
+  color: var(--color-link);
+  font-size: 0.9rem;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}

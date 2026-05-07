@@ -1,0 +1,60 @@
+.carousel {
+  --slide-count: 6;
+  --gap: 32px;
+  --inner-padding: var(--padding);
+
+  & .carousel__wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 var(--padding);
+  }
+
+  & .carousel__content {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(
+      var(--slide-count),
+      calc(100vw - (2 * var(--gap)))
+    );
+    width: calc(
+      (var(--slide-count) * 100vw) - ((var(--slide-count) + 1) * var(--gap))
+    );
+    padding-bottom: var(--space);
+  }
+
+  & .carousel__pagination {
+    margin-top: var(--space28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space16);
+  }
+
+  & .carousel__pagination-body {
+    margin: 0;
+    font-size: 0.8rem;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  & .carousel__pagination-btn {
+    padding: 0;
+    border: none;
+    background-color: #d9d9d9;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--transition);
+
+    &:hover {
+      background-color: var(--color-hover);
+    }
+
+    &.active {
+      background-color: var(--color-text);
+    }
+  }
+}

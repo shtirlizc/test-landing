@@ -1,2 +1,11 @@
 .participants {
+  margin-top: 120px;
+
+  & .participants__head {
+    padding: 0 var(--padding);
+  }
+
+  & .participants__body {
+    margin-top: var(--space40);
+  }
 }

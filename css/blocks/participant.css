@@ -1,0 +1,36 @@
+.participant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & .participant__picture {
+    --size: 244px;
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .participant__name {
+    margin: var(--space28) 0 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  & .participant__status {
+    margin: var(--space8) 0 0;
+    opacity: 0.6;
+  }
+
+  & .participant__more {
+    margin-top: var(--space20);
+  }
+}
