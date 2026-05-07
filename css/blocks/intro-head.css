@@ -1,0 +1,25 @@
+.intro-head {
+  padding: 0 var(--padding);
+
+  p {
+    font-family: var(--font-head), sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.35em;
+    text-transform: uppercase;
+
+    b {
+      font-weight: 400;
+      color: var(--color-accent);
+    }
+  }
+
+  img {
+    margin: var(--space24) 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 394 / 250;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
