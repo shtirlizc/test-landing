@@ -15,8 +15,8 @@
   <body>
     <section class="hero">
       <div class="hero__bg"></div>
-      <div class="container hero__wrapper">
-        <header class="header">
+      <div class="hero__wrapper">
+        <header class="header container">
           <div class="logo">
             <svg
               width="92"
@@ -49,7 +49,7 @@
         </header>
 
         <div class="hero__content">
-          <div class="hero__info">
+          <div class="hero__info container">
             <h1 class="hero__title">
               <span>Превратите уездный город</span>
               <span>в столицу</span>
@@ -68,11 +68,17 @@
           </div>
 
           <div class="hero__images">
-            <img
-              class="city"
-              src="./assets/images/hero/city-mobile.png"
-              alt=""
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/images/hero/city.png"
+              />
+              <img
+                class="city"
+                src="./assets/images/hero/city-mobile.png"
+                alt=""
+              />
+            </picture>
             <img
               class="chess-1"
               src="./assets/images/hero/chess-1.png"

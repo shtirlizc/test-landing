@@ -4,6 +4,13 @@
   position: relative;
   background-color: #e9ded4;
 
+  /* tablet */
+  @media (width >= 768px) {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+
   & .hero__bg {
     position: absolute;
     top: 0;
@@ -23,12 +30,21 @@
   }
 
   & .hero__content {
+    /* tablet */
+    @media (width >= 768px) {
+      height: 100%;
+    }
   }
 
   & .hero__info {
     padding-inline: var(--padding);
     z-index: 1;
     position: relative;
+
+    /* tablet */
+    @media (width >= 768px) {
+      padding-right: 50%;
+    }
   }
 
   & .hero__title {
@@ -62,17 +78,38 @@
     margin-inline: auto;
     display: grid;
     gap: 14px;
+
+    /* tablet */
+    @media (width >= 768px) {
+      display: flex;
+    }
   }
 
   & .hero__images {
     position: relative;
     margin-top: 60px;
     z-index: 0;
+    overflow: hidden;
+
+    /* tablet */
+    @media (width >= 768px) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
 
     .city {
       width: 100%;
       z-index: 2;
       position: relative;
+      max-width: 1627px;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: auto;
+      }
     }
 
     .chess-1 {
