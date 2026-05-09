@@ -20,8 +20,8 @@
 
   /* tablet */
   @media (width >= 768px) {
-    max-width: 263px;
-    padding: var(--space20) var(--space40);
+    white-space: revert;
+    padding: var(--space20) var(--space44);
   }
 
   @media (hover: hover) {

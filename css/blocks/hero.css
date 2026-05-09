@@ -34,6 +34,13 @@
     @media (width >= 768px) {
       height: 100%;
     }
+
+    .container {
+      /* tablet */
+      @media (width >= 768px) {
+        height: 100%;
+      }
+    }
   }
 
   & .hero__info {
@@ -43,16 +50,27 @@
 
     /* tablet */
     @media (width >= 768px) {
-      padding-right: 50%;
+      max-width: 542px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0 20vh 0;
     }
   }
 
   & .hero__title {
+    margin: 0;
     display: grid;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.1em;
     text-transform: uppercase;
+
+    /* tablet */
+    @media (width >= 768px) {
+      font-size: 3rem;
+    }
 
     span {
       &:nth-child(1) {
@@ -69,11 +87,18 @@
   }
 
   & .hero__description {
+    margin: var(--space24) 0 0;
     font-size: 0.9rem;
     line-height: 1.3em;
+
+    /* tablet */
+    @media (width >= 768px) {
+      text-align: center;
+    }
   }
 
   & .hero__actions {
+    margin-top: var(--space32);
     max-width: 360px;
     margin-inline: auto;
     display: grid;
@@ -81,7 +106,11 @@
 
     /* tablet */
     @media (width >= 768px) {
-      display: flex;
+      margin: var(--space40) 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space16);
+      max-width: none;
     }
   }
 
@@ -89,26 +118,36 @@
     position: relative;
     margin-top: 60px;
     z-index: 0;
-    overflow: hidden;
 
     /* tablet */
     @media (width >= 768px) {
+      overflow: hidden;
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
     }
 
     .city {
-      width: 100%;
-      z-index: 2;
-      position: relative;
-      max-width: 1627px;
-
       /* tablet */
       @media (width >= 768px) {
-        width: auto;
+        position: relative;
+      }
+
+      .city-image {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        max-width: 1627px;
+
+        /* tablet */
+        @media (width >= 768px) {
+          width: auto;
+        }
       }
     }
 
@@ -119,6 +158,13 @@
       top: -15px;
       right: 20vw;
       z-index: 1;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: 113px;
+        top: -80px;
+        right: 300px;
+      }
     }
 
     .chess-2 {
@@ -128,6 +174,13 @@
       top: 35px;
       left: 20vw;
       z-index: 1;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: 104px;
+        left: auto;
+        right: 700px;
+      }
     }
 
     .chess-3 {
@@ -137,11 +190,28 @@
       bottom: 0;
       left: 50vw;
       z-index: 3;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: 154px;
+        left: auto;
+        right: 500px;
+      }
     }
 
     .chess-4 {
       display: none;
       z-index: 3;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: 83px;
+        height: auto;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        right: 200px;
+      }
     }
 
     .sun {
@@ -153,6 +223,17 @@
       left: 50%;
       transform: translate(-50%, -50%);
       animation: sun 20s infinite linear;
+
+      /* tablet */
+      @media (width >= 768px) {
+        width: 660px;
+        left: auto;
+        right: 150px;
+        top: auto;
+        bottom: 200px;
+        transform: translate(0);
+        animation: sun-desktop 30s infinite linear;
+      }
     }
   }
 }
@@ -160,9 +241,29 @@
 @keyframes sun {
   from {
     transform: translate(-50%, -50%) rotate(0);
+
+    /* tablet */
+    @media (width >= 768px) {
+      transform: rotate(0);
+    }
   }
 
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+
+    /* tablet */
+    @media (width >= 768px) {
+      transform: rotate(-360deg);
+    }
+  }
+}
+
+@keyframes sun-desktop {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-360deg);
   }
 }
