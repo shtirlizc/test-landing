@@ -11,6 +11,7 @@
     /* tablet */
     @media (width >= 768px) {
       overflow: visible;
+      padding: 0;
     }
   }
 
