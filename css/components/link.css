@@ -1,8 +1,17 @@
 .link {
-  margin-top: var(--space12);
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
   display: inline-block;
   color: var(--color-link);
   font-size: 0.9rem;
+  line-height: 1.2em;
+  text-transform: none;
+  transition: color var(--transition);
+
+  /* tablet */
+  @media (width >= 768px) {
+    font-size: 1rem;
+  }
 
   &:hover {
     color: var(--color-accent);

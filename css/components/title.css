@@ -5,4 +5,21 @@
   font-weight: 400;
   text-transform: uppercase;
   display: grid;
+
+  /* tablet */
+  @media (width >= 768px) {
+    font-size: 2.7rem;
+  }
+
+  span:last-child:has(a) {
+    position: relative;
+    justify-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: var(--space24);
+
+    a {
+      max-width: 280px;
+    }
+  }
 }
