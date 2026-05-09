@@ -1,7 +1,15 @@
 .intro-head {
   padding: 0 var(--padding);
 
-
+  /* tablet */
+  @media (width >= 768px) {
+    --image-size: 394px;
+    position: relative;
+    padding-right: calc(var(--image-size) + 180px);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+  }
 
   img {
     margin: var(--space24) 0;
@@ -11,5 +19,15 @@
     aspect-ratio: 394 / 250;
     object-fit: cover;
     border-radius: 50%;
+
+    /* tablet */
+    @media (width >= 768px) {
+      position: absolute;
+      right: 0;
+      width: var(--image-size);
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

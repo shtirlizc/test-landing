@@ -1,11 +1,25 @@
 .intro {
   margin-top: 48px;
+  display: grid;
+  gap: 20px;
+
+  /* tablet */
+  @media (width >= 768px) {
+    margin-top: 107px;
+    gap: 64px;
+  }
 
   & .intro__title {
+    margin: 0;
     font-family: var(--font-head), sans-serif;
     font-size: 1.4rem;
     line-height: 1.35em;
     text-transform: uppercase;
+
+    /* tablet */
+    @media (width >= 768px) {
+      font-size: 1.8rem;
+    }
 
     b {
       font-weight: 700;
