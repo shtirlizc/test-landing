@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 100px;
+  margin-top: 104px;
   background-color: #e9ded4;
 
   & .footer__content {
@@ -8,6 +8,8 @@
     p {
       margin: 0;
       font-size: 0.8rem;
+      line-height: 1.2em;
+      opacity: 0.6;
     }
   }
 }

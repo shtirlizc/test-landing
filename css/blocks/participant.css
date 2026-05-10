@@ -4,8 +4,6 @@
   align-items: center;
   text-align: center;
 
-  outline: 1px dashed red;
-
   & .participant__picture {
     --size: 244px;
 
@@ -22,9 +20,10 @@
   }
 
   & .participant__name {
-    margin: var(--space28) 0 0;
+    margin: 33px 0 0;
     font-weight: 500;
     font-size: 1.2rem;
+    letter-spacing: -0.3px;
   }
 
   & .participant__status {

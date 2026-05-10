@@ -25,12 +25,10 @@
     counter-reset: stage-counter;
     display: grid;
     gap: var(--gap);
-    grid-template-columns: repeat(
-      var(--slide-count),
-      calc(100vw - (2 * var(--gap)))
-    );
+    grid-template-columns: repeat(var(--slide-count), 1fr);
     width: calc(
-      (var(--slide-count) * 100vw) - ((var(--slide-count) + 1) * var(--gap))
+      (var(--slide-count) * (100vw - (2 * var(--inner-padding)))) +
+        ((var(--slide-count) - 1) * var(--gap))
     );
 
     /* tablet */

@@ -1,5 +1,6 @@
 .btn-more {
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 500;
   height: 35px;
   border-radius: 18px;
   padding: var(--space12);

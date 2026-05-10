@@ -11,7 +11,7 @@
   & .carousel__wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 0 var(--padding);
+    padding: 0 var(--inner-padding);
     -ms-overflow-style: none;
     scrollbar-width: none;
 
@@ -30,7 +30,8 @@
     gap: var(--gap);
     grid-template-columns: repeat(var(--slide-count), 1fr);
     width: calc(
-      (var(--slide-count) * 100vw) - ((var(--slide-count) - 1) * var(--gap))
+      (var(--slide-count) * (100vw - (2 * var(--inner-padding)))) +
+        ((var(--slide-count) - 1) * var(--gap))
     );
 
     /* tablet */
@@ -43,11 +44,11 @@
   }
 
   & .carousel__pagination {
-    margin-top: var(--space28);
+    margin-top: var(--space40);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--space16);
+    gap: var(--space12);
 
     /* tablet */
     @media (width >= 768px) {
@@ -60,29 +61,11 @@
 
   & .carousel__pagination-body {
     margin: 0;
+    font-weight: 400;
     font-size: 0.8rem;
 
     span {
       opacity: 0.6;
-    }
-  }
-
-  & .carousel__pagination-btn {
-    padding: 0;
-    border: none;
-    background-color: #d9d9d9;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color var(--transition);
-
-    &:hover {
-      background-color: var(--color-hover);
-    }
-
-    &.active {
-      background-color: var(--color-text);
     }
   }
 }
