@@ -3,10 +3,12 @@
   gap: 5px;
   color: #595653;
   font-size: 14.42px;
-  line-height: 1.06em;
+  line-height: 1.08em;
   font-weight: 700;
   text-transform: uppercase;
 
   svg {
+    width: 79.5px;
+    height: auto;
   }
 }

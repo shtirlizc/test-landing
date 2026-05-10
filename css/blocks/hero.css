@@ -60,12 +60,13 @@
   }
 
   & .hero__title {
-    margin: 0;
+    margin: var(--space20) 0 0;
     display: grid;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.1em;
     text-transform: uppercase;
+    letter-spacing: 1px;
 
     /* tablet */
     @media (width >= 768px) {
@@ -98,7 +99,7 @@
   }
 
   & .hero__actions {
-    margin-top: var(--space32);
+    margin-top: 31px;
     max-width: 360px;
     margin-inline: auto;
     display: grid;
@@ -116,7 +117,7 @@
 
   & .hero__images {
     position: relative;
-    margin-top: 60px;
+    margin-top: 49px;
     z-index: 0;
 
     /* tablet */
@@ -153,14 +154,16 @@
 
     .chess-1 {
       position: absolute;
-      width: 47px;
+      width: 59px;
       height: auto;
-      top: -15px;
-      right: 20vw;
+      top: -30px;
+      right: 23vw;
+      transform: rotate(7.41deg);
       z-index: 1;
 
       /* tablet */
       @media (width >= 768px) {
+        transform: rotate(0deg);
         width: 113px;
         top: -80px;
         right: 300px;
@@ -169,10 +172,10 @@
 
     .chess-2 {
       position: absolute;
-      width: 47px;
+      width: 62px;
       height: auto;
-      top: 35px;
-      left: 20vw;
+      top: 9px;
+      left: 16vw;
       z-index: 1;
 
       /* tablet */
@@ -185,10 +188,10 @@
 
     .chess-3 {
       position: absolute;
-      width: 77px;
+      width: 95px;
       height: auto;
-      bottom: 0;
-      left: 50vw;
+      bottom: -14px;
+      left: 39vw;
       z-index: 3;
 
       /* tablet */
@@ -219,8 +222,8 @@
       height: auto;
       position: absolute;
       z-index: 0;
-      top: 0;
-      left: 50%;
+      top: 26px;
+      left: 48%;
       transform: translate(-50%, -50%);
       animation: sun 20s infinite linear;
 
