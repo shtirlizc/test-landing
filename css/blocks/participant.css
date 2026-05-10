@@ -4,6 +4,8 @@
   align-items: center;
   text-align: center;
 
+  outline: 1px dashed red;
+
   & .participant__picture {
     --size: 244px;
 

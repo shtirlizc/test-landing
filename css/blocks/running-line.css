@@ -4,7 +4,7 @@
   color: var(--color-bg);
   font-size: 0.8rem;
   line-height: 1.1em;
-  padding: 10px 0;
+  padding: 10px 0 11px;
   font-family: var(--font-head), sans-serif;
   opacity: 1;
   text-transform: uppercase;

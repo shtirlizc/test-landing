@@ -20,12 +20,12 @@
 
   & .intro-info__head {
     padding: 0 var(--padding);
-    margin-top: var(--space24);
+    margin-top: 21px;
   }
 
   & .intro-info__table {
     padding: 0 var(--padding);
-    margin-top: var(--space44);
+    margin-top: 29px;
 
     /* tablet */
     @media (width >= 768px) {
@@ -36,7 +36,7 @@
       margin: 0;
 
       div {
-        padding: var(--space16) 0;
+        padding: 15px 0;
         display: flex;
         flex-wrap: wrap;
         gap: var(--space12);
@@ -81,7 +81,7 @@
   }
 
   & .intro-info__link {
-    margin-top: var(--space40);
+    margin-top: 26px;
 
     a {
       color: var(--color-link);

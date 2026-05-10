@@ -7,16 +7,19 @@
 
   & .stages__body {
     position: relative;
-    margin-top: var(--space20);
-    padding-top: 140px;
+    padding-top: 144px;
   }
 
   & .stages__picture {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 0;
     z-index: 1;
     pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10px;
 
     /* tablet */
     @media (width >= 768px) {
@@ -28,7 +31,14 @@
 
     img {
       max-width: 100%;
+      width: 335px;
       height: auto;
+      transform: rotate(-3.42deg);
+
+      /* tablet */
+      @media (width >= 768px) {
+        transform: rotate(0deg);
+      }
     }
   }
 }

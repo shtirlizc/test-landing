@@ -12,14 +12,22 @@
   }
 
   span:last-child:has(a) {
-    position: relative;
-    justify-self: flex-start;
-    display: flex;
-    align-items: center;
-    gap: var(--space24);
+    /* tablet */
+    @media (width >= 768px) {
+      position: relative;
+      justify-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: var(--space24);
+    }
 
     a {
-      max-width: 280px;
+      margin-top: 14px;
+
+      @media (width >= 768px) {
+        margin-top: 0;
+        max-width: 280px;
+      }
     }
   }
 }

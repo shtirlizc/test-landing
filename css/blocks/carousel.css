@@ -12,6 +12,12 @@
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0 var(--padding);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     /* tablet */
     @media (width >= 768px) {
@@ -26,7 +32,6 @@
     width: calc(
       (var(--slide-count) * 100vw) - ((var(--slide-count) - 1) * var(--gap))
     );
-    padding-bottom: var(--space);
 
     /* tablet */
     @media (width >= 768px) {
