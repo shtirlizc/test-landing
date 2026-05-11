@@ -2,6 +2,8 @@
   --gap: 32px;
   --inner-padding: var(--padding);
 
+  user-select: none;
+
   /* desktop */
   @media (width >= 991px) {
     --gap: 20px;
@@ -11,11 +13,14 @@
 
   & .carousel__wrapper {
     width: 100vw;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     padding: 0 var(--inner-padding);
+    scroll-padding-inline: var(--inner-padding);
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 
     &::-webkit-scrollbar {
       display: none;
@@ -25,6 +30,7 @@
     @media (width >= 991px) {
       padding: 0;
       width: auto;
+      overflow: hidden;
     }
   }
 
@@ -52,5 +58,9 @@
         display: none;
       }
     }
+  }
+
+  & .carousel__item {
+    scroll-snap-align: start;
   }
 }
