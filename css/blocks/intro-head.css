@@ -1,8 +1,8 @@
 .intro-head {
   padding: 0 var(--padding);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     --image-size: 394px;
     position: relative;
     padding-right: calc(var(--image-size) + 60px);
@@ -20,10 +20,10 @@
     object-fit: cover;
     border-radius: 50%;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       position: absolute;
-      right: 0;
+      right: var(--padding);
       width: var(--image-size);
       margin: 0;
       top: 50%;

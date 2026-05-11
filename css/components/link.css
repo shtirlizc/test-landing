@@ -8,8 +8,8 @@
   text-transform: none;
   transition: color var(--transition);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     font-size: 1rem;
   }
 

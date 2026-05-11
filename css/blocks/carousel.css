@@ -2,8 +2,8 @@
   --gap: 32px;
   --inner-padding: var(--padding);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     --gap: 20px;
 
     position: relative;
@@ -21,8 +21,8 @@
       display: none;
     }
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       padding: 0;
       width: auto;
     }
@@ -34,8 +34,8 @@
     grid-auto-flow: column;
     grid-auto-columns: calc(100vw - (2 * var(--inner-padding)));
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       grid-auto-columns: calc((var(--container) - (2 * var(--gap))) / 3);
       width: max-content;
       padding: 0 calc((100% - var(--container)) / 2);
@@ -47,8 +47,8 @@
       width: 2px;
       margin-left: calc(var(--inner-padding) - (var(--gap)) - 2px);
 
-      /* tablet */
-      @media (width >= 768px) {
+      /* desktop */
+      @media (width >= 991px) {
         display: none;
       }
     }

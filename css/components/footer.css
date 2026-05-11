@@ -2,16 +2,16 @@
   margin-top: 104px;
   background-color: #e9ded4;
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     margin-top: 140px;
   }
 
   & .footer__content {
     padding: 40px var(--padding) 60px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       padding: 37px var(--padding) 72px;
     }
 

@@ -19,8 +19,8 @@
     }
   }
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     --size: 44px;
   }
 

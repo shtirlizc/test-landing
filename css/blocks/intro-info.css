@@ -1,16 +1,22 @@
 .intro-info {
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     display: grid;
-    grid-template-columns: 474px 1fr;
+    grid-template-columns: 360px 1fr;
     grid-template-rows: auto 1fr;
     align-items: flex-start;
+    gap: var(--space32) var(--space20);
+  }
+
+  /* widescreen */
+  @media (width >= 1200px) {
+    grid-template-columns: 474px 1fr;
     gap: 60px var(--space44);
   }
 
   & .intro-info__picture {
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       grid-row: 1 / -1;
     }
 
@@ -18,8 +24,8 @@
       width: 100%;
       height: auto;
 
-      /* tablet */
-      @media (width >= 768px) {
+      /* widescreen */
+      @media (width >= 1200px) {
         transform: translate(-1px, 1px) scale(1.12);
       }
     }
@@ -29,8 +35,8 @@
     padding: 0 var(--padding);
     margin-top: 21px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin: 0;
     }
   }
@@ -39,8 +45,8 @@
     padding: 0 var(--padding);
     margin-top: 29px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin-top: 0;
     }
 
@@ -58,8 +64,8 @@
         }
 
         &:first-child {
-          /* tablet */
-          @media (width >= 768px) {
+          /* desktop */
+          @media (width >= 991px) {
             dt,
             dd {
               padding-top: 0;
@@ -68,8 +74,8 @@
         }
 
         &:last-child {
-          /* tablet */
-          @media (width >= 768px) {
+          /* desktop */
+          @media (width >= 991px) {
             dt,
             dd {
               padding-bottom: 0;
@@ -77,8 +83,8 @@
           }
         }
 
-        /* tablet */
-        @media (width >= 768px) {
+        /* desktop */
+        @media (width >= 991px) {
           display: grid;
           grid-template-columns: 3.21fr 4.2fr;
           padding: 0;
@@ -86,8 +92,8 @@
         }
 
         dt {
-          /* tablet */
-          @media (width >= 768px) {
+          /* desktop */
+          @media (width >= 991px) {
             padding: 15px 15px 15px 0;
           }
         }
@@ -96,8 +102,8 @@
           margin: 0;
           font-weight: 600;
 
-          /* tablet */
-          @media (width >= 768px) {
+          /* desktop */
+          @media (width >= 991px) {
             border-left: 2px solid var(--color-border);
             padding: 15px 0 15px 15px;
           }
@@ -115,8 +121,8 @@
   & .intro-info__link {
     margin-top: 26px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin-top: var(--space48);
     }
   }

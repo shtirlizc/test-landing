@@ -1,8 +1,8 @@
 .stages {
   margin-top: 120px;
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     margin-top: 200px;
   }
 
@@ -16,9 +16,9 @@
     position: relative;
     padding-top: 144px;
 
-    /* tablet */
-    @media (width >= 768px) {
-      padding-top: 0;
+    /* desktop */
+    @media (width >= 991px) {
+      padding: 0 var(--padding);
       margin-top: 55px;
     }
   }
@@ -34,11 +34,20 @@
     width: 100%;
     padding-right: 10px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       top: auto;
       left: auto;
       bottom: -1px;
+      right: 12px;
+      transform: scale(0.7);
+      transform-origin: right;
+      transition: transform var(--transition);
+    }
+
+    /* fullhd */
+    @media (width >= 1366px) {
+      transform: scale(1);
       right: -72px;
     }
 
@@ -48,8 +57,8 @@
       height: auto;
       transform: rotate(-3.42deg);
 
-      /* tablet */
-      @media (width >= 768px) {
+      /* desktop */
+      @media (width >= 991px) {
         transform: rotate(0deg);
         width: 400px;
       }

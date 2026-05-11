@@ -5,8 +5,8 @@
   max-width: var(--mobile-content-width);
   margin-inline: var(--mobile-content-margin);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     margin-top: 81px;
     gap: 64px;
   }
@@ -23,8 +23,8 @@
       font-size: 1.4rem;
     }
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       font-size: 1.8rem;
     }
 

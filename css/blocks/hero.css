@@ -3,6 +3,7 @@
 
   position: relative;
   background-color: #e9ded4;
+  overflow: hidden;
 
   /* tablet */
   @media (width >= 768px) {
@@ -30,14 +31,14 @@
   }
 
   & .hero__content {
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       height: 100%;
     }
 
     .container {
-      /* tablet */
-      @media (width >= 768px) {
+      /* desktop */
+      @media (width >= 991px) {
         height: 100%;
       }
     }
@@ -50,14 +51,24 @@
     padding-inline: var(--padding);
     z-index: 1;
 
-    /* tablet */
-    @media (width >= 768px) {
-      max-width: 544px;
+    /* desktop */
+    @media (width >= 991px) {
+      max-width: 590px;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 0 18.2vh 0;
+      padding: 0 var(--padding) 18.2vh var(--padding);
+    }
+
+    /* widescreen */
+    @media (width >= 1200px) {
+      max-width: 610px;
+    }
+
+    /* fullhd */
+    @media (width >= 1262px) {
+      max-width: 544px;
     }
   }
 
@@ -70,8 +81,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin-top: 0;
       font-size: 3rem;
     }
@@ -95,8 +106,8 @@
     font-size: 0.9rem;
     line-height: 1.3em;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       text-align: center;
     }
   }
@@ -108,8 +119,8 @@
     display: grid;
     gap: 14px;
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin: var(--space40) 0 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -228,6 +239,7 @@
 
       /* tablet */
       @media (width >= 768px) {
+        transform: scale(1);
         width: 192px;
         left: auto;
         right: 477px;
@@ -278,8 +290,8 @@
   from {
     transform: translate(-50%, -50%) rotate(0);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       transform: rotate(0);
     }
   }
@@ -287,8 +299,8 @@
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       transform: rotate(-360deg);
     }
   }

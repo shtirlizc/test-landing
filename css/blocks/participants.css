@@ -1,8 +1,8 @@
 .participants {
   margin-top: 120px;
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     margin-top: 200px;
     display: grid;
     grid-template-columns: auto auto;
@@ -14,8 +14,13 @@
     max-width: var(--mobile-content-width);
     margin-inline: var(--mobile-content-margin);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
+      padding-left: var(--padding);
+    }
+
+    /* fullhd */
+    @media (width >= 1262px) {
       padding-left: calc((100vw - var(--container)) / 2);
     }
 
@@ -27,8 +32,8 @@
   & .participants__body {
     margin-top: var(--space40);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin-top: 60px;
       grid-column: 1 / -1;
       grid-row: -1 / -2;
@@ -43,12 +48,17 @@
     align-items: center;
     gap: var(--space12);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       margin: 0;
       justify-content: flex-end;
-      padding-right: calc((100vw - var(--container)) / 2);
+      padding-right: var(--padding);
       gap: 14px;
+    }
+
+    /* fullhd */
+    @media (width >= 1262px) {
+      padding-right: calc((100vw - var(--container)) / 2);
     }
   }
 

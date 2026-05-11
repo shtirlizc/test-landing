@@ -11,16 +11,16 @@
     font-size: 1.8rem;
   }
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     font-size: 2.7rem;
     line-height: 1.2em;
     letter-spacing: -1px;
   }
 
   span:last-child:has(a) {
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       position: relative;
       justify-self: flex-start;
       display: flex;
@@ -31,7 +31,8 @@
     a {
       margin-top: 14px;
 
-      @media (width >= 768px) {
+      /* desktop */
+      @media (width >= 991px) {
         margin-top: -2px;
         max-width: 280px;
         letter-spacing: 0;

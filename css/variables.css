@@ -31,10 +31,14 @@
   --mobile-content-width: 480px;
   --mobile-content-margin: auto;
 
-  /* tablet */
-  @media (width >= 768px) {
-    --padding: 0;
+  /* desktop */
+  @media (width >= 991px) {
     --mobile-content-width: none;
     --mobile-content-margin: 0;
+  }
+
+  /* fullhd */
+  @media (width >= 1262px) {
+    --padding: 0;
   }
 }

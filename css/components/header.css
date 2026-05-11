@@ -1,8 +1,8 @@
 .header {
   padding: 18px var(--padding);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     padding: 26px var(--padding) 0;
   }
 }

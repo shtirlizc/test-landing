@@ -18,8 +18,8 @@
     color var(--transition),
     border-color var(--transition);
 
-  /* tablet */
-  @media (width >= 768px) {
+  /* desktop */
+  @media (width >= 991px) {
     white-space: revert;
     line-height: 1.3em;
     padding: 13px var(--space48);
@@ -40,8 +40,8 @@
     border-color: var(--outline-color);
     color: var(--color-btn);
 
-    /* tablet */
-    @media (width >= 768px) {
+    /* desktop */
+    @media (width >= 991px) {
       background-color: transparent;
       border-color: var(--color-btn);
     }
