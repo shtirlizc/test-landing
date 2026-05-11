@@ -3,11 +3,14 @@
   --inner-padding: var(--padding);
 
   & .slider__wrapper {
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     padding: 0 var(--inner-padding);
+    scroll-padding-inline: var(--inner-padding);
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;
@@ -55,6 +58,8 @@
     padding: 61px 19px 34px;
     display: grid;
     gap: 26px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 
     /* desktop */
     @media (width >= 991px) {
