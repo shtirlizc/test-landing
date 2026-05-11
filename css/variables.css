@@ -28,8 +28,13 @@
   --container: 1222px;
   --padding: var(--space20);
 
+  --mobile-content-width: 480px;
+  --mobile-content-margin: auto;
+
   /* tablet */
   @media (width >= 768px) {
     --padding: 0;
+    --mobile-content-width: none;
+    --mobile-content-margin: 0;
   }
 }

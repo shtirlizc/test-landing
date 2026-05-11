@@ -1,5 +1,10 @@
+/* narrow-mobile */
+@media (width < 375px) {
+  /* media query rules */
+}
+
 /* mobile */
-@media (width < 560px) {
+@media (width >= 375px) {
   /* media query rules */
 }
 

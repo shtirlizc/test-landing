@@ -8,12 +8,15 @@
 
   & .stages__head {
     padding: 0 var(--padding);
+    max-width: var(--mobile-content-width);
+    margin-inline: var(--mobile-content-margin);
   }
 
   & .stages__body {
     position: relative;
     padding-top: 144px;
 
+    /* tablet */
     @media (width >= 768px) {
       padding-top: 0;
       margin-top: 55px;

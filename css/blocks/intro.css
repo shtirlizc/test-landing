@@ -2,6 +2,8 @@
   margin-top: 49px;
   display: grid;
   gap: 35px;
+  max-width: var(--mobile-content-width);
+  margin-inline: var(--mobile-content-margin);
 
   /* tablet */
   @media (width >= 768px) {
@@ -12,9 +14,14 @@
   & .intro__title {
     margin: 0;
     font-family: var(--font-head), sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.35em;
     text-transform: uppercase;
+
+    /* mobile */
+    @media (width >= 375px) {
+      font-size: 1.4rem;
+    }
 
     /* tablet */
     @media (width >= 768px) {

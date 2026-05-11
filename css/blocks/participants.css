@@ -11,6 +11,8 @@
 
   & .participants__head {
     padding: 0 var(--padding);
+    max-width: var(--mobile-content-width);
+    margin-inline: var(--mobile-content-margin);
 
     /* tablet */
     @media (width >= 768px) {
