@@ -5,7 +5,7 @@
   @media (width >= 768px) {
     --image-size: 394px;
     position: relative;
-    padding-right: calc(var(--image-size) + 180px);
+    padding-right: calc(var(--image-size) + 60px);
     min-height: 250px;
     display: flex;
     align-items: center;

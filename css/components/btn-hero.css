@@ -21,7 +21,8 @@
   /* tablet */
   @media (width >= 768px) {
     white-space: revert;
-    padding: var(--space20) var(--space44);
+    line-height: 1.3em;
+    padding: 13px var(--space48);
   }
 
   @media (hover: hover) {
@@ -42,13 +43,13 @@
     /* tablet */
     @media (width >= 768px) {
       background-color: transparent;
+      border-color: var(--color-btn);
     }
 
     @media (hover: hover) {
       &:hover {
         background-color: var(--color-btn);
         color: var(--color-bg);
-        border-color: var(--color-btn);
       }
     }
   }

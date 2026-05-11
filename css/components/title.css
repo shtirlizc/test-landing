@@ -9,6 +9,8 @@
   /* tablet */
   @media (width >= 768px) {
     font-size: 2.7rem;
+    line-height: 1.2em;
+    letter-spacing: -1px;
   }
 
   span:last-child:has(a) {
@@ -18,15 +20,16 @@
       justify-self: flex-start;
       display: flex;
       align-items: center;
-      gap: var(--space24);
+      gap: var(--space32);
     }
 
     a {
       margin-top: 14px;
 
       @media (width >= 768px) {
-        margin-top: 0;
+        margin-top: -2px;
         max-width: 280px;
+        letter-spacing: 0;
       }
     }
   }

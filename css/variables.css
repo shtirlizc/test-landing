@@ -27,4 +27,9 @@
 
   --container: 1222px;
   --padding: var(--space20);
+
+  /* tablet */
+  @media (width >= 768px) {
+    --padding: 0;
+  }
 }

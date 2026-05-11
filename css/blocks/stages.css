@@ -1,6 +1,11 @@
 .stages {
   margin-top: 120px;
 
+  /* tablet */
+  @media (width >= 768px) {
+    margin-top: 200px;
+  }
+
   & .stages__head {
     padding: 0 var(--padding);
   }
@@ -8,6 +13,11 @@
   & .stages__body {
     position: relative;
     padding-top: 144px;
+
+    @media (width >= 768px) {
+      padding-top: 0;
+      margin-top: 55px;
+    }
   }
 
   & .stages__picture {
@@ -25,8 +35,8 @@
     @media (width >= 768px) {
       top: auto;
       left: auto;
-      bottom: -10px;
-      right: -40px;
+      bottom: -1px;
+      right: -72px;
     }
 
     img {
@@ -38,6 +48,7 @@
       /* tablet */
       @media (width >= 768px) {
         transform: rotate(0deg);
+        width: 400px;
       }
     }
   }

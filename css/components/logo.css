@@ -7,8 +7,19 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  /* tablet */
+  @media (width >= 768px) {
+    font-size: 16.65px;
+    gap: 6.35px;
+  }
+
   svg {
     width: 79.5px;
     height: auto;
+
+    /* tablet */
+    @media (width >= 768px) {
+      width: 91.82px;
+    }
   }
 }

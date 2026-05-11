@@ -50,12 +50,12 @@
 
     /* tablet */
     @media (width >= 768px) {
-      max-width: 542px;
+      max-width: 544px;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 0 20vh 0;
+      padding: 0 0 18.2vh 0;
     }
   }
 
@@ -70,6 +70,7 @@
 
     /* tablet */
     @media (width >= 768px) {
+      margin-top: 0;
       font-size: 3rem;
     }
 
@@ -137,6 +138,8 @@
       /* tablet */
       @media (width >= 768px) {
         position: relative;
+        transform: translate(10px);
+        margin-bottom: -4px;
       }
 
       .city-image {
@@ -164,9 +167,9 @@
       /* tablet */
       @media (width >= 768px) {
         transform: rotate(0deg);
-        width: 113px;
-        top: -80px;
-        right: 300px;
+        width: 148px;
+        top: -94px;
+        right: 299px;
       }
     }
 
@@ -180,9 +183,10 @@
 
       /* tablet */
       @media (width >= 768px) {
-        width: 104px;
+        width: 128px;
         left: auto;
-        right: 700px;
+        right: 649px;
+        top: 12px;
       }
     }
 
@@ -196,9 +200,10 @@
 
       /* tablet */
       @media (width >= 768px) {
-        width: 154px;
+        width: 192px;
         left: auto;
-        right: 500px;
+        right: 477px;
+        bottom: -43px;
       }
     }
 
@@ -212,8 +217,8 @@
         height: auto;
         display: block;
         position: absolute;
-        bottom: 30px;
-        right: 200px;
+        bottom: 23px;
+        right: 186px;
       }
     }
 
@@ -231,9 +236,9 @@
       @media (width >= 768px) {
         width: 660px;
         left: auto;
-        right: 150px;
+        right: 173px;
         top: auto;
-        bottom: 200px;
+        bottom: 87px;
         transform: translate(0);
         animation: sun-desktop 30s infinite linear;
       }

@@ -50,7 +50,7 @@
 
     /* tablet */
     @media (width >= 768px) {
-      padding: var(--space20);
+      padding: var(--space20) 21px var(--space20) var(--space20);
       gap: var(--space20);
     }
 
@@ -76,6 +76,11 @@
   & .slider__slide {
     display: flex;
     gap: 17px;
+
+    /* tablet */
+    @media (width >= 768px) {
+      gap: var(--space16);
+    }
 
     &:nth-child(3) {
       /* tablet */
@@ -122,6 +127,7 @@
       /* tablet */
       @media (width >= 768px) {
         font-size: 1rem;
+        line-height: 1.2em;
       }
     }
   }

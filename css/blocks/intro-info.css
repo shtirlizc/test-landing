@@ -3,8 +3,9 @@
   @media (width >= 768px) {
     display: grid;
     grid-template-columns: 474px 1fr;
-    grid-template-rows: auto auto;
-    gap: var(--space44);
+    grid-template-rows: auto 1fr;
+    align-items: flex-start;
+    gap: 60px var(--space44);
   }
 
   & .intro-info__picture {
@@ -12,15 +13,26 @@
     @media (width >= 768px) {
       grid-row: 1 / -1;
     }
+
     img {
       width: 100%;
       height: auto;
+
+      /* tablet */
+      @media (width >= 768px) {
+        transform: translate(-1px, 1px) scale(1.12);
+      }
     }
   }
 
   & .intro-info__head {
     padding: 0 var(--padding);
     margin-top: 21px;
+
+    /* tablet */
+    @media (width >= 768px) {
+      margin: 0;
+    }
   }
 
   & .intro-info__table {
@@ -29,7 +41,7 @@
 
     /* tablet */
     @media (width >= 768px) {
-      margin-top: 60px;
+      margin-top: 0;
     }
 
     dl {
@@ -45,10 +57,30 @@
           border-bottom: 2px solid var(--color-border);
         }
 
+        &:first-child {
+          /* tablet */
+          @media (width >= 768px) {
+            dt,
+            dd {
+              padding-top: 0;
+            }
+          }
+        }
+
+        &:last-child {
+          /* tablet */
+          @media (width >= 768px) {
+            dt,
+            dd {
+              padding-bottom: 0;
+            }
+          }
+        }
+
         /* tablet */
         @media (width >= 768px) {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 3.21fr 4.2fr;
           padding: 0;
           gap: 0;
         }
@@ -56,7 +88,7 @@
         dt {
           /* tablet */
           @media (width >= 768px) {
-            padding: var(--space16) var(--space8) var(--space16) 0;
+            padding: 15px 15px 15px 0;
           }
         }
 
@@ -67,7 +99,7 @@
           /* tablet */
           @media (width >= 768px) {
             border-left: 2px solid var(--color-border);
-            padding: var(--space16) 0 var(--space16) var(--space8);
+            padding: 15px 0 15px 15px;
           }
 
           span {
@@ -81,15 +113,6 @@
   }
 
   & .intro-info__link {
-    margin-top: 26px;
-
-    a {
-      color: var(--color-link);
-      font-size: 0.9rem;
-
-      &:hover {
-        color: var(--color-accent);
-      }
-    }
+    margin-top: var(--space48);
   }
 }

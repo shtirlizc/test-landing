@@ -1,8 +1,17 @@
 .participants {
   margin-top: 120px;
 
+  /* tablet */
+  @media (width >= 768px) {
+    margin-top: 200px;
+  }
+
   & .participants__head {
     padding: 0 var(--padding);
+
+    .title {
+      letter-spacing: 0;
+    }
   }
 
   & .participants__body {
