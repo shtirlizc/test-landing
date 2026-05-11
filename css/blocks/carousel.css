@@ -24,6 +24,7 @@
     /* tablet */
     @media (width >= 768px) {
       padding: 0;
+      width: auto;
     }
   }
 
@@ -37,7 +38,7 @@
     @media (width >= 768px) {
       grid-auto-columns: calc((var(--container) - (2 * var(--gap))) / 3);
       width: max-content;
-      padding: 0 calc((100vw - var(--container)) / 2);
+      padding: 0 calc((100% - var(--container)) / 2);
       margin-inline: auto;
     }
 
