@@ -1,5 +1,4 @@
 .slider {
-  --slide-count: 5;
   --gap: 20px;
   --inner-padding: var(--padding);
 
@@ -25,16 +24,25 @@
     counter-reset: stage-counter;
     display: grid;
     gap: var(--gap);
-    grid-template-columns: repeat(var(--slide-count), 1fr);
-    width: calc(
-      (var(--slide-count) * (100vw - (2 * var(--inner-padding)))) +
-        ((var(--slide-count) - 1) * var(--gap))
-    );
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100vw - (2 * var(--inner-padding)));
 
     /* tablet */
     @media (width >= 768px) {
+      grid-auto-flow: row;
       width: 100%;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      margin-left: calc(var(--inner-padding) - (var(--gap)) - 2px);
+
+      /* tablet */
+      @media (width >= 768px) {
+        display: none;
+      }
     }
   }
 

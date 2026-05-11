@@ -1,14 +1,16 @@
 .carousel {
-  --slide-count: 6;
   --gap: 32px;
   --inner-padding: var(--padding);
 
   /* tablet */
   @media (width >= 768px) {
+    --gap: 20px;
+
     position: relative;
   }
 
   & .carousel__wrapper {
+    width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0 var(--inner-padding);
@@ -28,44 +30,26 @@
   & .carousel__content {
     display: grid;
     gap: var(--gap);
-    grid-template-columns: repeat(var(--slide-count), 1fr);
-    width: calc(
-      (var(--slide-count) * (100vw - (2 * var(--inner-padding)))) +
-        ((var(--slide-count) - 1) * var(--gap))
-    );
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100vw - (2 * var(--inner-padding)));
 
     /* tablet */
     @media (width >= 768px) {
-      width: calc(var(--container) * 2);
-      grid-template-columns: repeat(6, 1fr);
+      grid-auto-columns: calc((var(--container) - (2 * var(--gap))) / 3);
+      width: max-content;
       padding: 0 calc((100vw - var(--container)) / 2);
       margin-inline: auto;
     }
-  }
 
-  & .carousel__pagination {
-    margin-top: var(--space40);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space12);
+    &::after {
+      content: "";
+      width: 2px;
+      margin-left: calc(var(--inner-padding) - (var(--gap)) - 2px);
 
-    /* tablet */
-    @media (width >= 768px) {
-      margin: 0;
-      position: absolute;
-      top: -50px;
-      right: 0;
-    }
-  }
-
-  & .carousel__pagination-body {
-    margin: 0;
-    font-weight: 400;
-    font-size: 0.8rem;
-
-    span {
-      opacity: 0.6;
+      /* tablet */
+      @media (width >= 768px) {
+        display: none;
+      }
     }
   }
 }

@@ -4,8 +4,6 @@
   align-items: center;
   text-align: center;
 
-  outline: 1px dashed red;
-
   & .participant__picture {
     --size: 244px;
 
@@ -36,6 +34,11 @@
   & .participant__status {
     margin: var(--space8) 0 0;
     opacity: 0.6;
+
+    /* tablet */
+    @media (width >= 768px) {
+      margin-top: 6px;
+    }
   }
 
   & .participant__more {

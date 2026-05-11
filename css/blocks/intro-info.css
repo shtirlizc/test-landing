@@ -113,6 +113,11 @@
   }
 
   & .intro-info__link {
-    margin-top: var(--space48);
+    margin-top: 26px;
+
+    /* tablet */
+    @media (width >= 768px) {
+      margin-top: var(--space48);
+    }
   }
 }
